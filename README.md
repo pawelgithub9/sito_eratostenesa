@@ -27,6 +27,68 @@ dla każdej kolejnej wartości z przedziału.
 
 ## 3. Implementacja Sita w programowaniu
 
+### Python
+
+#### Sprawdź, czy liczba n jest naturalna
+```python
+def is_range_correct(n):
+    if n > 2 and n%1==0:
+        return True
+    else:
+        return False
+```
+lub
+```python
+def is_range_correct(n):
+    return True if n > 2 and n%1==0 else False
+```
+
+#### Wypisywanie liczb pierwszych
+
+Pamiętaj o `import math`
+
+```python
+def sieve_of_eratosthenes_print(n):
+    is_prime = [True] * (n + 1)  # Tworzymy listę z wszystkimi wartościami True
+
+    # 0 i 1 nie są liczbami pierwszymi
+    is_prime[0] = False
+    is_prime[1] = False
+
+    for i in range(2, int(math.sqrt(n)) + 1):
+        if is_prime[i]:
+            for j in range(i*i, n + 1, i):
+                is_prime[j] = False
+
+    for x in range(2, n+1):
+        if is_prime[x] == True:
+            print(x)
+```
+
+#### Tworzenie listy z liczbami pierwszymi
+```python
+def sieve_of_eratosthenes(n):
+    is_prime = [True] * (n + 1)  # Tworzymy listę z wszystkimi wartościami True
+
+    # 0 i 1 nie są liczbami pierwszymi
+    is_prime[0] = False
+    is_prime[1] = False
+
+    for i in range(2, int(math.sqrt(n)) + 1):
+        if is_prime[i]:
+            for j in range(i*i, n + 1, i):
+                is_prime[j] = False
+
+    # Tworzymy listę z samymi liczbami pierwszymi z podanego przedziału
+    prime_numbers = []
+
+    for x in range(2, n+1):
+        if is_prime[x] == True:
+            prime_numbers.append(x)
+
+    return prime_numbers
+```
+
 ## 4. Zadania
 
 ### Znajdź liczby pierwsze z przedziału:
@@ -38,6 +100,10 @@ dla każdej kolejnej wartości z przedziału.
 - 42
 - 64
 - 97
+
+### Rozkład na czynniki pierwsze
+Stwórz funkcję w Pythonie, która daną liczbę naturalną rozłoży na czynniki pierwsze.
+Rozwiązanie nie musi być oparte na treści prezentacji na temat rozkładu! Wykorzystaj funkcję Sita Eratostenesa.
 
 ## 5. Źródła
 
