@@ -14,11 +14,11 @@ dla każdej kolejnej wartości z przedziału.
 
 ## 2. Działanie Sita
 
-1. Stwórz listę dla indeksów z przedziału ⟨0, n⟩. Wszystkie wartości mają być `true`.
-2. Ustaw `pierwsze[0] = false` i `pierwsze[1] = false`.
+1. Stwórz listę dla indeksów z przedziału ⟨0, n⟩. Wszystkie wartości mają być `True`.
+2. Ustaw `pierwsze[0] = False` i `pierwsze[1] = False`.
 3. Wybierz najmniejszą liczbę z przedziału ⟨2, n⟩. Jest to `2`, która jest liczbą pierwszą.
-4. Dla większych wielokrotności liczby `2` ustaw wartość `false`. Przykład: `pierwsze[4] = false`
-5. Wybierz kolejną liczbę `x` z przedziału ⟨2, n⟩. Jeśli `pierwsze[x] = true`, to znaczy, że `x` jest liczbą pierwszą. Wtedy ustaw wartość `false` dla większych wielokrotności `x`.
+4. Dla większych wielokrotności liczby `2` ustaw wartość `False`. Przykład: `pierwsze[4] = False`
+5. Wybierz kolejną liczbę `x` z przedziału ⟨2, n⟩. Jeśli `pierwsze[x] = True`, to znaczy, że `x` jest liczbą pierwszą. Wtedy ustaw wartość `False` dla większych wielokrotności `x`.
 6. Powtarzaj krok 5 dla `x∈⟨2, √n⟩`
 
 **Pamiętaj!**
