@@ -102,7 +102,7 @@ def sieve_of_eratosthenes(n):
 
 ### Rozkład na czynniki pierwsze
 Stwórz funkcję w Pythonie, która daną liczbę naturalną rozłoży na czynniki pierwsze.
-Rozwiązanie nie musi być oparte na treści prezentacji na temat rozkładu! Wykorzystaj funkcję Sita Eratostenesa.
+Rozwiązanie nie musi być oparte na rozwiązaniu w prezentacji! Wykorzystaj algorytm Sita Eratostenesa.
 
 ## 5. Źródła
 
