@@ -29,6 +29,8 @@ dla każdej kolejnej wartości z przedziału.
 
 ### Python
 
+**Pamiętaj o `import math`**
+
 #### Sprawdź, czy liczba n jest naturalna
 ```python
 def is_range_correct(n):
@@ -44,9 +46,6 @@ def is_range_correct(n):
 ```
 
 #### Wypisywanie liczb pierwszych
-
-Pamiętaj o `import math`
-
 ```python
 def sieve_of_eratosthenes_print(n):
     is_prime = [True] * (n + 1)  # Tworzymy listę z wszystkimi wartościami True
