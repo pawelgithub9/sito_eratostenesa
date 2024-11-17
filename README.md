@@ -14,9 +14,12 @@ Wady:
 
 ## 2. Działanie Sita
 
-1. Stwórz listę dla indeksów z przedziału ⟨2, n⟩. Wszystkie wartości mają być `true`.
-2. Ustaw przedział dla liczb ⟨2, n⟩
-3. Zacznij odsiewać liczby pierwsze, które należą do ⟨2, √n⟩
+1. Stwórz listę dla indeksów z przedziału ⟨0, n⟩. Wszystkie wartości mają być `true`.
+2. Ustaw `pierwsze[0] = false` i `pierwsze[1] = false`.
+3. Wybierz najmniejszą liczbę z przedziału ⟨2, n⟩. Jest to `2`, która jest liczbą pierwszą.
+4. Dla większych wielokrotności liczby `2` ustaw wartość `false`. Przykład: `pierwsze[4] = false`
+5. Wybierz kolejną liczbę `x` z przedziału. Jeśli `pierwsze[x] = true`, to znaczy, że `x` jest liczbą pierwszą. Wtedy ustaw wartość `false` dla większych wielokrotności `x`.
+6. Powtarzaj krok 5 dla `x∈⟨2, √n⟩`
 
 **Pamiętaj!**
 - Usuwając wielokrotności liczby pierwszej, zacznij od jej kwadratu! Nie ma sensu usuwać mniejszych wielokrotności, gdyż zostały już usunięte. Pomoże to w optymalizacji algorytmu.
@@ -34,5 +37,3 @@ Rozłóż na czynniki pierwsze:
 - 42
 - 64
 - 97
-
-- 
