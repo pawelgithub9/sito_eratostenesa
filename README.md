@@ -47,7 +47,7 @@ def is_range_correct(n):
 
 #### Wypisywanie liczb pierwszych
 ```python
-def sieve_of_eratosthenes_print(n):
+def print_sieve_of_eratosthenes(n):
     is_prime = [True] * (n + 1)  # Tworzymy listę z wszystkimi wartościami True
 
     # 0 i 1 nie są liczbami pierwszymi
