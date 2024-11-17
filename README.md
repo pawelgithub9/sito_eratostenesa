@@ -17,9 +17,10 @@ dla każdej kolejnej wartości z przedziału.
 1. Stwórz listę dla indeksów z przedziału ⟨0, n⟩. Wszystkie wartości mają być `True`.
 2. Ustaw `pierwsze[0] = False` i `pierwsze[1] = False`.
 3. Wybierz najmniejszą liczbę z przedziału ⟨2, n⟩. Jest to `2`, która jest liczbą pierwszą.
-4. Dla większych wielokrotności liczby `2` ustaw wartość `False`. Przykład: `pierwsze[4] = False`
+4. Dla większych wielokrotności liczby `2` ustaw wartość `False`. Przykład: `pierwsze[4] = False`.
 5. Wybierz kolejną liczbę `x` z przedziału ⟨2, n⟩. Jeśli `pierwsze[x] = True`, to znaczy, że `x` jest liczbą pierwszą. Wtedy ustaw wartość `False` dla większych wielokrotności `x`.
-6. Powtarzaj krok 5 dla `x∈⟨2, √n⟩`
+6. Powtarzaj krok 5 dla `x∈⟨2, √n⟩`.
+7. Wszystkie indeksy, których wartość wynosi `True`, są liczbami pierwszymi.
 
 **Pamiętaj!**
 - Usuwając wielokrotności liczby pierwszej, zacznij od jej kwadratu! Nie ma sensu usuwać mniejszych wielokrotności, gdyż zostały już usunięte. Pomoże to w optymalizacji algorytmu.
