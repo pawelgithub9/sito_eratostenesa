@@ -40,11 +40,11 @@ dla każdej kolejnej wartości z przedziału.
 
 ## 5. Źródła
 
-### Kanał „Matura Informatyka – Małgorzata Piekarska”
+#### Kanał „Matura Informatyka – Małgorzata Piekarska”
 https://www.youtube.com/watch?v=xo2aoAMN-4A
 ### korepetycjezinformatyki.pl
 https://www.korepetycjezinformatyki.pl/sito-eratostenesa/
-### algorytm.edu.pl
+#### algorytm.edu.pl
 https://www.algorytm.edu.pl/algorytmy-maturalne/sito-eratostenesa.html
 https://www.algorytm.edu.pl/matura-informatyka/zlozonosc-algorytmu
 ### eduinf.waw.pl
