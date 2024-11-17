@@ -44,19 +44,7 @@ def print_sieve_of_eratosthenes(n):
     for x in range(2, n+1):
         if is_prime[x] == True:
             print(x)
-
-def prime_factorization(n):
-    prime_numbers = sieve_of_eratosthenes(n)
-    prime_factors = []
-
-    while n != 1:
-        x = 0
-        while n%prime_numbers[x] != 0:
-            x += 1
-        prime_factors.append(prime_numbers[x])
-        n /= prime_numbers[x]
-
-    return prime_factors
+            
 
 if __name__ == '__main__':
     print("   ---   Sito Eratostenesa  ---   \n")
@@ -70,6 +58,3 @@ if __name__ == '__main__':
     print(sieve_of_eratosthenes(n))
     print()
     print_sieve_of_eratosthenes(n)
-    print()
-    print("Rozkład liczby " + str(n) + ":")
-    print(prime_factorization(n))
