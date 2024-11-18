@@ -101,7 +101,8 @@ def print_prime_numbers(n):
 
 ### Rozkład na czynniki pierwsze
 Stwórz funkcję w Pythonie, która daną liczbę naturalną rozłoży na czynniki pierwsze.
-Rozwiązanie nie musi być oparte na rozwiązaniu w prezentacji! Wykorzystaj algorytm Sita Eratostenesa.
+Rozwiązanie nie musi być oparte na sposobie w prezentacji! Wykorzystaj algorytm Sita Eratostenesa.
+Niech funkcja zwróci tablice z czynnikami.
 
 ## 5. Źródła
 
