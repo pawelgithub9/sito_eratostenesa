@@ -31,7 +31,7 @@ dla każdej kolejnej wartości z przedziału.
 
 **Pamiętaj o `import math`**
 
-#### Sprawdź, czy liczba n jest naturalna
+#### Sprawdź, czy liczba n jest naturalna i większa od 2
 ```python
 def is_range_correct(n):
     if n > 2 and n%1==0:
@@ -43,6 +43,22 @@ lub
 ```python
 def is_range_correct(n):
     return True if n > 2 and n%1==0 else False
+```
+
+#### Sito Eratostenesa
+```python
+def print_sieve_of_eratosthenes(n):
+    is_prime = [True] * (n + 1)  # Tworzymy listę z wszystkimi wartościami True
+
+    # 0 i 1 nie są liczbami pierwszymi
+    is_prime[0] = False
+    is_prime[1] = False
+
+    for i in range(2, int(math.sqrt(n)) + 1):
+        if is_prime[i]:
+            for j in range(i*i, n + 1, i):
+                is_prime[j] = False
+    return is_prime
 ```
 
 #### Wypisywanie liczb pierwszych
