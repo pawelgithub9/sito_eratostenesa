@@ -47,10 +47,10 @@ def is_range_correct(n):
 
 #### Sito Eratostenesa
 ```python
-def print_sieve_of_eratosthenes(n):
-    is_prime = [True] * (n + 1)  # Tworzymy listę z wszystkimi wartościami True
+def sieve_of_eratosthenes(n):
+    is_prime = [True] * (n + 1)  # Tworzymy liste z wszystkimi wartościami True
 
-    # 0 i 1 nie są liczbami pierwszymi
+    # 0 i 1 nie sa liczbami pierwszymi
     is_prime[0] = False
     is_prime[1] = False
 
@@ -58,50 +58,33 @@ def print_sieve_of_eratosthenes(n):
         if is_prime[i]:
             for j in range(i*i, n + 1, i):
                 is_prime[j] = False
+
     return is_prime
-```
-
-#### Wypisywanie liczb pierwszych
-```python
-def print_sieve_of_eratosthenes(n):
-    is_prime = [True] * (n + 1)  # Tworzymy listę z wszystkimi wartościami True
-
-    # 0 i 1 nie są liczbami pierwszymi
-    is_prime[0] = False
-    is_prime[1] = False
-
-    for i in range(2, int(math.sqrt(n)) + 1):
-        if is_prime[i]:
-            for j in range(i*i, n + 1, i):
-                is_prime[j] = False
-
-    for x in range(2, n+1):
-        if is_prime[x] == True:
-            print(x)
 ```
 
 #### Tworzenie listy z liczbami pierwszymi
 ```python
-def sieve_of_eratosthenes(n):
-    is_prime = [True] * (n + 1)  # Tworzymy listę z wszystkimi wartościami True
+def find_prime_numbers(n):
+    is_prime = sieve_of_eratosthenes(n)
 
-    # 0 i 1 nie są liczbami pierwszymi
-    is_prime[0] = False
-    is_prime[1] = False
-
-    for i in range(2, int(math.sqrt(n)) + 1):
-        if is_prime[i]:
-            for j in range(i*i, n + 1, i):
-                is_prime[j] = False
-
-    # Tworzymy listę z samymi liczbami pierwszymi z podanego przedziału
+    # Tworzymy liste z samymi liczbami pierwszymi z podanego przedzialu
     prime_numbers = []
 
-    for x in range(2, n+1):
+    for x in range(2, n + 1):
         if is_prime[x] == True:
             prime_numbers.append(x)
 
     return prime_numbers
+```
+
+#### Wypisywanie liczb pierwszych
+```python
+def print_prime_numbers(n):
+    is_prime = sieve_of_eratosthenes(n)
+
+    for x in range(2, n+1):
+        if is_prime[x] == True:
+            print(x)
 ```
 
 ## 4. Zadania
