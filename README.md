@@ -94,15 +94,16 @@ def print_prime_numbers(n):
 - ⟨2, 80⟩
 - ⟨2, 100⟩
 
+
+### Funkcja w Pythonie - rozkład na czynniki pierwsze
+Stwórz funkcję w Pythonie, która daną liczbę naturalną rozłoży na czynniki pierwsze.
+Rozwiązanie nie musi być oparte na sposobie w prezentacji! Wykorzystaj algorytm Sita Eratostenesa.
+Niech funkcja zwróci tablice z czynnikami.
+
 ### Rozłóż na czynniki pierwsze:
 - 42
 - 64
 - 97
-
-### Rozkład na czynniki pierwsze
-Stwórz funkcję w Pythonie, która daną liczbę naturalną rozłoży na czynniki pierwsze.
-Rozwiązanie nie musi być oparte na sposobie w prezentacji! Wykorzystaj algorytm Sita Eratostenesa.
-Niech funkcja zwróci tablice z czynnikami.
 
 ## 5. Źródła
 
