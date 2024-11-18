@@ -31,7 +31,7 @@ dla każdej kolejnej wartości z przedziału.
 
 **Pamiętaj o `import math`**
 
-#### Sprawdź, czy liczba n jest naturalna i większa od 2
+#### Sprawdź, czy n>2 ∧ n∈ℤ
 ```python
 def is_range_correct(n):
     if n > 2 and n%1==0:
