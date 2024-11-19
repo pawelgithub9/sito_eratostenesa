@@ -93,6 +93,7 @@ def print_prime_numbers(n):
 - ⟨2, 60⟩
 - ⟨2, 80⟩
 - ⟨2, 100⟩
+- ⟨2, 653⟩
 
 
 ### Funkcja w Pythonie - rozkład na czynniki pierwsze
